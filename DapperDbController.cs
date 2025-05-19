@@ -178,7 +178,7 @@ public class DapperDbController : ControllerBase
                     try {{
                         document.getElementById('result').innerHTML = '<div style=""""color: blue"""">Executing...</div>';
                         
-                        const response = await fetch(`/api/db/${{endpoint}}`, {{
+                        const response = await fetch(`${{endpoint}}`, {{
                             method: 'POST',
                             headers: {{ 
                                 'Content-Type': 'application/json',
